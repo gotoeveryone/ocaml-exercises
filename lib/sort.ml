@@ -19,8 +19,8 @@ let rec quicksort lst =
       quicksort lt @ (pivot :: quicksort gte)
 
 (* 使用例 *)
-let () =
+(* let () =
   Random.self_init ();
   let sorted = quicksort [ 3; 6; 8; 10; 1; 5; 2; 1; 4 ] in
   List.iter (Printf.printf "%d ") sorted;
-  Printf.printf "\n"
+  Printf.printf "\n" *)

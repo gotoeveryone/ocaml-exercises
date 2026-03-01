@@ -16,6 +16,6 @@ let to_string r =
         (String.concat "; " (List.map string_of_int evens))
 
 (* 使用例 *)
-let () =
+(* let () =
   partition [ 1; 2; 3; 4; 5; 6; 7; 8; 9; 10 ] |> fun (odds, evens) ->
-  Printf.printf "%s\n" (to_string { odds; evens })
+  Printf.printf "%s\n" (to_string { odds; evens }) *)

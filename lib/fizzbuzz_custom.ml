@@ -19,14 +19,5 @@ let to_string = function
 (* FizzBuzzの文字列を取得する *)
 let fizzbuzz n = n |> classify |> to_string
 
-(* ユーザー入力を取得し、上限値とする *)
-let limit = read_line () |> int_of_string
-
-(* ループ処理 *)
-let rec loop n =
-  if n > limit then ()
-  else (
-    print_endline (fizzbuzz n);
-    loop (n + 1))
-
-let () = loop 1
+(* 結果のリストを返す *)
+let generate limit = List.init limit (fun i -> fizzbuzz (i + 1))
